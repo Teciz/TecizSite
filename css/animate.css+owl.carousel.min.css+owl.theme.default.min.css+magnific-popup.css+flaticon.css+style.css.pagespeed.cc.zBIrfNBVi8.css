@@ -793,6 +793,14 @@ Copyright (c) 2015 Daniel Eden
   .main_body{
     overflow-x: hidden;
   }
+  .navbar-brand{
+    text-align: right;
+    position: relative;
+    top: 10px;
+  }
+  /* .oi-menu{
+    text-align: right;
+  } */
 }
 @-webkit-keyframes fadeInDown {
   from {
@@ -3702,6 +3710,8 @@ fieldset:disabled a.btn {
   justify-content: flex-end;
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
+  position: relative;
+  bottom: 25px;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent;
