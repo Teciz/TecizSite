@@ -7,7 +7,9 @@
  body {
     overflow-x: hidden;
  }
-
+html{
+    scroll-behavior: smooth;
+}
 /* Toggle Styles */
 
 #wrapper {
@@ -142,3 +144,6 @@
         margin-right: 0;
     }
 }
+a.current {
+    background: white;
+  }
