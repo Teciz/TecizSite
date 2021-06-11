@@ -13,6 +13,10 @@
     <!--fontawesome-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
 integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&amp;display=swap"
+		rel="stylesheet">
+    <!-- <link rel="stylesheet"
+		href="css/animate.css%2bowl.carousel.min.css%2bowl.theme.default.min.css%2bmagnific-popup.css%2bflaticon.css%2bstyle.css.pagespeed.cc.zBIrfNBVi8.css" /> -->
 </head>
 <body>
     
@@ -54,7 +58,66 @@ integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9
             </ul>
           </div>
           <div class="page-content">
-            <h1>Welcome back, John!</h1>
+            <section id="adminpanel">
+              <h1 class="page-header">Admin Panel</h1><hr>
+                <p>Login to Admin Panel through URL - <strong>http://yourdomain/site/login</strong></p>
+              
+                              <!-- <p><img src="assets/images/admin-login.png" alt="img" class="img-responsive"></p> -->
+                              <p>After successful login you will reach to Admin Dashboard. Below you can find navigational overview of user screen.</p>
+                              <!-- <p><img src="assets/images/admin-dashboard.png" alt="img" class="img-responsive"></p> -->
+                              <h4>Admin Panel consist 27 modules listed below -</h4>
+                              <ol>
+                              <li><strong>Front Office</strong> - for all reception/front office related activities like enquiries, calls, visitors, postal receive/dispatch </li>
+                                  <li><b>Student Information</b> - for all the information related to student like student search, profile, student admission, student history</li>
+                                  <li><b>Fees Collection</b> - for all the details related to student fees collection, fees master creation, fees dues, fees reports</li>
+                        <li><b>Income</b> - for all the income other than fees collection can be manage here like add income, search income, income head</li>
+                                  <li><b>Expenses</b> - for all the expenses related to school can be manage here like add expenses, search expenses, expense head</li>
+                                  <li><b>Attendance</b> - for managing student attendance and attendance report</li>
+                                  <li><b>Examinations</b> - for managing all the exams conducted by school like create exam, schedule exam, exam marks entry, marks grade</li>
+                        <li><b>Online Examinations</b> - for managing online exams conducted by school</li>
+                        <li><b>Lesson Plan</b> - for managing subject status and lesson plan</li>
+                                  <li><b>Academics</b> - for managing all the parameters / master data required to run school like classes, sections, subjects, assign teachers, class timetable, promote student to upper class</li>
+                                  <li><strong>Human Resource</strong> - for all the information related to staff members can be manage here like staff search, profile, attendance, payroll, leaves</li>
+                                  <li><b>Communicate</b> - it works like a notice board basically a messaging system for communication to students, parents and teachers</li>
+                                  <li><b>Download Center</b> - for managing downloadable documents like assignments, study material, syllabus and other documents need to distribute students and teachers</li>
+                          <li><b>Zoom Live Classes</b> - for students zoom live classes and for staff live meetings. Its addon extension and should  be purchased separately</li>
+                                  <li><strong>Homework</strong> - teachers can give homework here and further evaluate them</li>
+                                  <li><b>Library</b> - all the books in your library can be manage here</li>
+                        <li><b>Inventory</b> - manage all the assets of your school with stocks and store under inventory module</li>
+                                  <li><b>Transport</b> - for managing transportation service like routes and their fares</li>
+                                  <li><b>Hostel</b> - for managing hostels, hostel rooms and their fares</li>
+                                  <li><strong>Certificate</strong> - design and generate student certificate and ID Card here</li>
+                                  <li><strong>Front CMS</strong> - manage front public site of Larasof School here by creating pages, menus, events, gallery, news</li>
+                                  <li><b>Alumni</b> - for managing all pass out students or alumni records and events</li>
+                                  <li><b>Reports</b> - all the various reports related to different modules can be found here</li>
+                                  <li><b>System Settings</b> - configure Larasof School here for different settings like school, sessions, admin password, SMS, Paypal, backup / restore, languages</li>
+                                  <li><strong>Calendar &amp; ToDo List</strong> - track and manage all daily/monthly activities and create your task in todo list</li>
+                        <li><b>Chat</b> - chat for two  way messaging staff and students</li>
+                        <li><b>One Click Updater</b> - to install new in system</li>
+                              </ol> 
+                              <h5>To understand how Larasof School works first we need to configure and setup it for our school. In this whole documentation we will consider our sample school which is Larasof School.</h5>  
+                              <h4>Steps to setup your school -</h4>
+                              <ol>
+                                  <li>In the Admin panel go to <b>System Settings &gt; General Setting</b> in upper right side click on <b>Edit</b> button to update your school data.
+                                      <!-- <p><img src="assets/images/system-general-setting.png" alt="img" class="img-responsive"></p> -->
+                                  </li>
+                                  <li>Update your <b>School Name</b>, <b>School Code</b> (School Code is your school affiliation / accreditation no), <b>Address</b>, <b>Phone</b>, <b>Email</b> (for remaining settings please check <a href="#syssettings">System Settings</a> section) now click on <b>Save</b> button to update record.</li>
+                                  <li>For updating your school print logo (used in fees receipt and payslip print) go to <b>System Settings &gt; General Setting</b> in lower left side click on <b>Edit Print Logo</b> button (it is recommended for logo to use .png image with transparent or white background and around 200px x 200px in size). Now drag and drop or select your logo file. By clicking on <strong>Edit Admin Logo and Edit Admin Small Logo</strong> you can set logo for admin panel. <strong>Edit App Logo</strong> to set logo for mobile app. </li>
+                                  <li>For automated SMS messaging add any one of available SMS Gateway with the required details from <b>System Settings &gt; SMS Setting</b>.</li>
+                                  <li>To enabling online payment in <b>Parent Panel</b> and <strong>Student Panel</strong> update your payment gateway account details for this, go to <b>System Settings &gt; Payment Methods</b> select your appropriate payment gateway and add you payment gateway account details then click on save button and enable it from right side box.</li>
+                                  <li>At this point we have completed basic setup of our school. Now we will add our academics in Larasof School like Classes, Sections, Subjects, Teachers.</li>
+                                  <li>For adding classes go to <b>Academics &gt; Classes</b>, before adding classes first add Sections from <b>Academics &gt; Sections</b>. Select Sections comes under a Class when you adding a Class. Classes can be add from left side <b>Add Class</b> form and added classes can be see right side <b>Class List</b>. Add all classes running in your school here.
+                                      <!-- <p><img src="assets/images/academics-class.png" alt="img" class="img-responsive"></p> -->
+                                  </li>
+                                  <li>For adding sections go to <b>Academics &gt; Sections</b>, Sections can be add from left side <b>Add Section</b> form and added section can be see right side <b>Section List</b>. Add all section name used in your school here e.g. Class 1 has 3 sections A, B, C and Class 2 has only A, B sections then we will add 3 sections A, B, C here. After adding sections, select section comes in a Class when you adding Classes.</li>
+                                  <li>For adding Teachers go to <b>Human Resource &gt; Staff Directory</b>, Teachers can be add from top right corner <b>Add Staff</b> button. At this page you can add any staff by selecting its role. If we are creating teacher then we should select Teacher as role and designation as role.</li>
+                                  <li>For adding subjects go to <b>Academics &gt; Subjects</b>, Subjects can be add from left side <b>Add Subject</b> form and added subjects can be see right side <b>Subject List</b>. Add all subjects including theory and practical in your school here. Subjects can be assign through Subject Groups to their classes in next step.</li>
+                                  <li>For assigning subjects to their classes go to <b>Academics &gt; Subject Group</b> enter Subject Group then select Class and Section then select all subjects you want to include in this class and section as group now click on <b>Save</b>.
+                                      <!-- <p><img src="assets/images/academics-sssign-subjects.png" alt="img" class="img-responsive"></p> -->
+                                  </li>                    
+                                <li>Great! you have completed your <b>Larasof School</b> setup. Now further we will understand working of all the modules 1 by 1 in detail.</li>
+                              </ol> 
+              </section>
           </div>
         </div>
       </div>
