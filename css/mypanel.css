@@ -9,6 +9,7 @@
  }
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* Toggle Styles */
 
@@ -32,13 +33,26 @@ html{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #000;
+    background-color: #062489;
+    background-image: linear-gradient(to bottom, black, rgba(6, 6, 156, 0.699));    
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
+#sidebar-wrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+#sidebar-wrapper::-webkit-scrollbar-thumb {
+    background: white;
+    color: black; 
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+#sidebar-wrapper::-webkit-scrollbar-thumb:hover {
+    background: rgb(212, 204, 204)
+  }    
 #wrapper.toggled #sidebar-wrapper {
     width: 250px;
 }
@@ -76,7 +90,6 @@ html{
     text-decoration: none;
     color: #999999;
 }
-
 .sidebar-nav li a:hover {
     text-decoration: none;
     color: #fff;
@@ -118,16 +131,7 @@ html{
 
     }
     
-   ::-webkit-scrollbar-track{
-        box-shadow: inset 0 0 5px gray;
-        border-radius: 10px;
-
-        
-    }
-   ::-webkit-scrollbar-thumb{
-        background-color: white;
-        border-radius: 10px;
-    }
+   
 
 
     #wrapper.toggled #sidebar-wrapper {
@@ -146,4 +150,10 @@ html{
 }
 a.current {
     background: white;
+  }
+
+  @media(max-width:990px){
+    #page-content-wrapper{
+        overflow-x: hidden;
+    }
   }
