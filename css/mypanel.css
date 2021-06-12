@@ -34,7 +34,7 @@ html{
     margin-left: -250px;
     overflow-y: auto;
     background-color: #062489;
-    background-image: linear-gradient(to bottom, black, rgba(6, 6, 156, 0.699));    
+    /* background-image: linear-gradient(to bottom, black, rgba(6, 6, 156, 0.699));     */
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
